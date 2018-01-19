@@ -1,0 +1,24 @@
+<!--logs.wxml-->
+<view class="container log-list">
+ <image style="width: 200px; height: 200px; background-color: #eeeeee;"  src="{{userInfor}}" bindtouchstart="stare"></image>
+ <view wx:for="{{dataLit}}"> {{item}}  {{index}} </view>
+</view>
+<view wx:if="{{view == 'WEBVIEW'}}"> WEBVIEW </view>
+<view wx:elif="{{view == 'APP'}}"> APP </view>
+<view wx:else="{{view == 'MINA'}}"> MINA </view>
+<view>{{one.ode.aa}}</view>
+
+<view class="group">
+    <icon type="download" size="{{item}}" color="{{red}}"/>
+    <progress percent="{{percent}}" active-mode="forwards" active="true" bindtap="tab"/>
+</view>
+<wxs module="one">
+    var msg="hello word";
+    var Ode={
+       aa:"aaaa"
+    }
+    module.exports={
+       msg:msg,
+       ode:Ode
+    }
+</wxs>

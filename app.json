@@ -1,0 +1,54 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/center/center",
+    "pages/class/class"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "stone",
+    "navigationBarTextStyle":"#fff",
+    "enablePullDownRefresh":true,
+    "backgroundTextStyle":"dark",
+    "onReachBottomDistance":"50px"
+  },
+  "tabBar":{
+    "list":[
+        {
+          "pagePath":"pages/index/index",
+          "text":"首页",
+          "iconPath":"images/bottombtn0101.png",
+          "selectedIconPath":"images/bottombtn0102.png"
+        },
+        {
+          "pagePath":"pages/logs/logs",
+          "text":"分类",
+          "iconPath":"images/bottombtn0201.png",
+          "selectedIconPath":"images/bottombtn0202.png"
+        },
+        {
+          "pagePath":"pages/class/class",
+          "text":"购物车",
+          "iconPath":"images/bottombtn0301.png",
+          "selectedIconPath":"images/bottombtn0302.png"
+        },
+        {
+          "pagePath":"pages/center/center",
+          "text":"个人中心",
+          "iconPath":"images/bottombtn0401.png",
+          "selectedIconPath":"images/bottombtn0402.png"
+        }
+    ],
+    "color":"#000",
+    "selectedColor":"red"
+  },
+  "networkTimeout":{
+     "request":60000,
+     "connectSocket":60000,
+     "uploadFile":60000,
+     "downloadFile":60000
+  },
+  "debug":true
+}

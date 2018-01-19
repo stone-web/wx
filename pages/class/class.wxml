@@ -1,0 +1,8 @@
+<!--logs.wxml-->
+<view class="container log-list">
+   <button bindtap="choose" style="background:red;">选择照片</button>
+   <button bindtap="choosecamer" style="background:red;">调取相机</button>
+   <button bindtap="pic" style="background:red;">预览图片</button>
+   <button bindtap="save" style="background:red;">保存图片到本地</button>
+   <button bindtap="luyin" style="background:red;">录音</button>
+</view>
